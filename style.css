@@ -630,7 +630,7 @@ input[type=submit]:hover {
 }
 
 .calendar-btn :hover {
-    background-color: black;
+    background-color: var(--beige);
     color: white;
 }
 
@@ -643,6 +643,8 @@ input[type=submit]:hover {
     display: flex;
     text-align: center;
 }
+
+
 
 /*
 time {
@@ -718,17 +720,27 @@ time {
 
 .big-date-grid > button {
     border: none;
-    background: transparent;
+    background: white;
 }
 
 .big-date-grid > button :hover {
-    background-color: black;
-    color: white;
+    background-color: var(--beige);
+    font-weight: 500;
 }
 
 .big-date-grid > button :active {
     background-color: black;
     color: white;
+}
+
+.big-date-grid > .highlight-date{
+    background: var(--beige);
+   width: 22px;
+    height: 22px;
+    color: black;
+    font-weight: 500;
+    padding:  0px;
+    margin: 8px 0px 0px 8px;
 }
 
 .month {
@@ -790,7 +802,7 @@ time {
 }
 
 .big-day {
-    padding: 2px;
+    padding: 3px;
     margin-bottom: 5px;
 }
 
@@ -832,15 +844,20 @@ time {
     z-index: 2;
 }
 
+.big-day{
+    padding: 10px;
+}
+
 .big-calendar {
     width: 200px;
+    padding-left: 40px;
+    padding-top: 20px;
+
 }
 
 .quick-search {
-/*
-    margin-top: ;
-    margin-left: 100px;
-*/
+    margin-top: 100px;
+/*    margin-left: 100px;*/
 }
 
 
