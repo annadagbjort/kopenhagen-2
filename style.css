@@ -306,7 +306,7 @@ i {
 }
 
 /* The line indicators */
-.line {
+.line-slide {
     cursor: pointer;
     height: 5px;
     width: 40px;
@@ -317,7 +317,7 @@ i {
 }
 
 .active,
-.line:hover {
+.line-slide:hover {
     background-color: #CBCAC6;
 }
 
