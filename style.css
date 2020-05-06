@@ -32,6 +32,7 @@
 .hide{
     display: none;
 }
+
 a {
     text-decoration: none;
     color: var(--black);
@@ -68,6 +69,7 @@ body {
 main {
     margin: 20px 170px 20px 70px;
 }
+
 
 .ads {}
 
@@ -384,7 +386,7 @@ i {
     .events {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        margin-top: 50px;
+        margin-top: 0px;
         padding: 50px;
     }
 }
@@ -467,7 +469,7 @@ i {
 .magazine-main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-top: 100px;
+    margin-top: 50px;
     margin-right: 20px;
 }
 
@@ -813,6 +815,61 @@ time {
 
 
 /*Calendar page styling end*/
+
+/* artists page*/
+main {
+                margin: 30px 100px auto 70px;
+            }
+
+            .eventsThatHaveTheId,
+            magazineThatHaveTheId {
+                margin: 100px 0;
+            }
+
+            .magazinevents {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 1em;
+
+
+            }
+
+            .eventOrmagazine {
+                display: flex;
+                flex-flow: column;
+            }
+
+            .theName {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+            .artistFeatured {
+/*
+                width: 100px;
+                height: 100px;
+*/
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .imgArtists {
+                max-width: 200px;
+                max-height: 100px;
+            }
+
+            .artistImg {
+                padding-left: 40px;
+
+            }
+
+            .artistImg>img {
+                height: 300px
+            }
+/* artists page end*/
+
+
 
 .h1-calendar-page {
     padding-top: 150px;
