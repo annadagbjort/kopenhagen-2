@@ -6,6 +6,7 @@
 
 :root {
     --black: #0D0D0D;
+    --black-op: rgb(13,13,13,.5);
     --white: #fff;
     --darker-grey: #CBCAC6;
     --light-grey: #EBEBEB;
@@ -19,14 +20,17 @@
 }
 
 .headerLine {
+    width: 60vw;
     display: inline-flex;
+    justify-content: space-around;
 }
 
 .line {
     border-bottom: solid .09em var(--black);
     width: 50vw;
-    height: 42px;
+    height: 40px;
     margin: 0 0 30px;
+
 }
 
 .hide{
@@ -46,6 +50,7 @@ ul {
 
 h1 {
     font-weight: 600;
+    padding-right: 1rem;
 }
 
 h2,
@@ -125,13 +130,14 @@ header {
 .navbar {
     z-index: 999;
     width: 300px;
-    background-color: var(--light-grey);
+    background-color: var(--brown);
     position: fixed;
     top: 0px;
     padding: 110px 0 30px 20px;
     right: -300px; /* It is positioned outside the screen */
     transition: right .4s; /* slide effect */
     margin-right: -30px;
+    font-weight: bold;
 }
 /* when burgerm. is clicked js adds this class to navbar */
 .change {
@@ -157,9 +163,9 @@ header {
 
 .navLink:hover {
     /* This is just something - NEED TO DECIDE HOW SHOULD LOOK*/
-    border-bottom: solid var(--brown) 0.1px;
+/*    border-bottom: solid var(--white) 0.1px;*/
     padding-bottom: 5px;
-    color: var(--brown);
+    color: var(--white);
 }
 
 
@@ -175,7 +181,7 @@ https://www.youtube.com/watch?v=BN6fH1nRDxA
 }
 .line{
     border-bottom: solid .09em var(--black);
-    width: 50vw;
+    max-width: 40vw;
     height: 42px;
     margin:0 0 30px;
 }
@@ -380,12 +386,15 @@ i {
         flex-flow: column;
         width: 200px;
         height: 250px;
-
+    }
+    .event-item:hover{
+        background: var(--darker-grey);
+        cursor: pointer;
     }
 
     .events {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
         margin-top: 0px;
         padding: 50px;
     }
@@ -500,7 +509,14 @@ button {
 
 .center-btn {
     text-align: center;
-    padding: 50px;
+    padding: 0 50px 100px 6px;
+/*    padding-bottom: 100px;*/
+}
+
+.frontPageBtn:hover {
+    background-color: var(--beige);
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .magazine-main {
@@ -521,11 +537,19 @@ form {
 
 /* Add some padding and a grey background color to containers */
 .newsletter-container {
-    border: 4px solid #0D0D0D;
-    width: 20vw;
-    padding: 20px;
-    background-color: #0D0D0D;
-    color: #EBEBEB;
+    border: 5px solid var(--light-grey);
+    width: 16em;
+    padding: 0px 12px;
+    background-color: var(--light-grey);
+    color: var(--black);
+}
+.one>h4{
+    margin-bottom:2px;
+/*    text-align: center;*/
+    padding-left:10px;
+}
+.two {
+    padding: 5px;
 }
 
 /* Style the input elements and the submit button */
@@ -567,6 +591,7 @@ input[type=submit]:hover {
     text-align: center;
     margin-bottom: 205px;
     margin-right: 25px;
+    padding-left: 4px;
 }
 
 .day-of-week,
@@ -630,12 +655,14 @@ time {
 
 .month {
     display: inline-block;
-    padding: -1px 120px;
+/*    padding: -1px 120px;*/
+    padding: 0 60px 0 50px;
 }
 
 .month p {
     display: inline-block;
     width: 200px;
+
 }
 
 .arrow1 {
@@ -645,7 +672,7 @@ time {
 
 .arrow2 {
     display: inline;
-    padding-left: 45px;
+    padding-left: 50px;
 }
 
 /*END: CALENDAR STYLING*/
@@ -663,13 +690,16 @@ time {
 .date-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 16px;
+    grid-gap: 13px;
     height: 10px;
     width: 10px;
     margin-top: 5px;
-    padding: 0 5px;
+    padding: 0 0 0 0px;
     position: relative;
     z-index: 2;
+}
+.date-grid{
+    margin-left: -13px;
 }
 
 .date-grid button:first-child {
@@ -876,9 +906,12 @@ main {
 }
 
 /*ADS STYLING*/
+.adsStart{
+    margin: 20px 0;
+}
 
 .ads-img {
-    width: 20vw;
+    width: 16em;
     margin: 5px 0;
 }
 
@@ -1006,15 +1039,43 @@ footer img {
 .artistNameDisplay{
     padding: 1em 0;
 }
+.artistsFetched {
+    margin-left: 20px;
+}
+.artistsFetched li{
+    padding: 2px 13px;
+}
+
+.artistsFetched li:hover{
+    cursor: pointer;
+    color: var(--brown);
+}
 
 .artistFilters{
     display: inline-flex;
     align-items:baseline;
+    padding-bottom: 30px;
 }
 .sortBy{
     padding: 0 1em 0 2em;
 }
+.artistSearch .search-btn {
+   display: none;
+}
 
+/* INSTITUTIONS */
+.regionsFetched li{
+    padding: 6px 13px;
+}
+
+.regionsFetched li:hover{
+    cursor: pointer;
+    color: var(--brown);
+}
+
+.instSearch .search-btn {
+   display: none;
+}
 
 @media only screen and (max-width:950px) {
     /*the size is just a random guess, need to change when we find the correct one*/

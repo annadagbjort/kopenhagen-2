@@ -50,17 +50,13 @@
             <h3 class="sortBy">Sort by</h3>
             <select name="" id="" class="selectFilter">
                 <option value="1" onclick="">Location</option>
-                <option value="2" onclick="">Nationality</option>
+                <option value="2" onclick="">Name</option>
             </select>
-            <h3 class="sortBy">Sort by</h3>
-            <select name="" id="" class="selectFilter">
-                <option value="1" onclick="">Location</option>
-                <option value="2" onclick="">Sweeden</option>
-            </select>
+
             <h3 class="sortBy"> Search:</h3>
-            <form action="">
+            <form action="" class="instSearch">
                 <input name="searchterm" type="search">
-                <input id="search-btn" type="submit" value="O">
+                <input class="search-btn" type="submit" value="O">
             </form>
         </div>
 
@@ -145,11 +141,11 @@
             </div>
 
             <form action="action_page">
-                <div class="newsletter-container">
-                    <p>Subscribe to our newsletter</p>
+                <div class="newsletter-container one">
+                    <h4>Subscribe to our newsletter</h4>
                 </div>
 
-                <div class="newsletter-container" style="background-color: white">
+                <div class="newsletter-container two" style="background-color: #EBEBEB">
                     <input type="text" placeholder="Name" name="name" required>
                     <input type="text" placeholder="Email Address" name="mail" required>
                     <!--
@@ -160,11 +156,11 @@
                 </div>
 
                 <div class="newsletter-container">
-                    <input type="submit" value="Subscribe">
+                    <input type="submit" value="Subscribe" style="background-color: rgb(255,255,255,.7); border: solid .1px #CBCAC6" >
                 </div>
 
             </form>
-            <div>
+            <div class="adsStart">
                 <img class="ads-img" src="../images/ad-images/kunsthojskolen-aeroe.png" alt="Reklame for Kunsthøjskolen på Ærø">
                 <img class="ads-img" src="../images/ad-images/kobenhavns-kunstskole.png" alt="Reklame for Københavns Kunstskole">
                 <img class="ads-img" src="../images/ad-images/krabbesholm.png" alt="Reklame for Krabbesholm højskole">
